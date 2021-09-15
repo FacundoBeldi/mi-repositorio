@@ -1,0 +1,415 @@
+/* import */
+@import "footer";
+@import "contacto";
+
+/* ESTILOS GENERALES */
+
+$col-naranja: rgb(247, 156, 38);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: $col-naranja;
+    font-size: 300%;
+    height: 100px; 
+    letter-spacing: 2px;   
+}
+
+li {
+    font-size: 20px;
+    margin: 10px;
+    list-style: none;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.header__item {
+    color: rgb(136, 136, 136);
+    font-weight: 700;
+}
+
+.header__item:hover {
+    color: $col-naranja;
+    transition: 1s;
+}
+
+.header__pestanas {
+    background-image: url(../img/FONDO.jpg);
+    height: 200px;
+    opacity: 80%;
+    display: flex;
+    background-position-y: center;
+    justify-content: space-between;
+    background-size: cover;
+    flex-wrap: nowrap;
+}
+
+/* INDEX */
+
+.header__primario {
+    background: url(../img/FONDO.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.main__texto{
+    margin: 20px;
+}
+
+.header__img{
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contenedorCarrusel {
+    margin: 100px;
+}
+
+#main__bienvenido {
+    font-size: 40px;
+    font-weight: 700;
+    color: $col-naranja;
+    text-align: center;
+}
+
+.main__carta {
+    font-size: 30px;
+    background-color: $col-naranja;
+    color: floralwhite;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;   
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+#main__ver {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main__carta:hover {
+    color:rgb(184, 104, 0);
+    transition: 1s;
+}
+
+.main__index {
+    text-align: center;
+}
+
+p{
+      font-size: 120%;
+}   
+
+
+/* PAGINA NUEVO PEDIDO */
+
+
+.table__menu{
+    font-size: 20px;
+}
+
+ 
+/* PAGINA ESPECIALES */
+@mixin especiales {
+    height: 300px;
+    background-size: 100%;
+    background-position:center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 1s;
+    opacity: 0.8;
+    text-align: center;      
+}
+
+%message-compartido {
+    height: 400px;
+    opacity: 1;    
+}
+
+.parrilla{
+    @include especiales;   
+    background-image: url(../img/PARRILLA.jpg); 
+}
+
+.parrilla:hover {
+   @extend %message-compartido;
+}
+
+.plancha{
+    @include especiales;  
+    background-image: url(../img/PLANCHA.jpg);   
+}
+
+.plancha:hover {
+    @extend %message-compartido;
+}
+
+.especial {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* PAGINA ACERCA DE */
+
+.box__segunda {
+    text-align: center;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.box__hora {
+    display:list-item
+}
+  
+.box__primera {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.box__texto {
+    padding: 20px;
+    border-radius: 15px;
+    height: auto;
+    background-color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.box__reloj {
+    display: block;
+    margin: auto;
+}
+
+
+.box__mapa { 
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 320px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+        font-size: smaller;
+    }
+    .header__pestanas {
+        height: 200px;
+    }
+   .header__primario{
+       height: 200px;
+   } 
+   
+   .header__item {
+       color: rgb(136, 136, 136);
+       font-weight: 700;
+   }
+   .header__menu {
+     margin: 0px;
+     float: right;
+     font-size: small;
+   }
+   
+   main {
+       width: 100%;
+       height: auto;
+   }
+   .box__primera {
+       display: block;
+   }
+   .box__texto {
+       width: auto;
+       color: floralwhite;
+       height: auto;
+       font-size: small;
+   }
+   .box__mapa { 
+     width: 300px;
+     margin: 0px;
+   }
+   h3 {
+       font-size: small;
+   }
+   .parrilla{
+       background-image: url(../img/PARRILLA.jpg);
+       height: 200px;
+       background-size: 100%;
+       background-position:center;
+       font-size: 30px;
+       background-repeat: no-repeat;
+   }
+   
+   .plancha{
+       background-image: url(../img/PLANCHA.jpg);
+       height: 200px;
+       background-size: 100%;
+       background-position:center;
+       font-size: 30px;
+       background-repeat: no-repeat;
+   }
+   .header__img{
+       display: none;
+   }
+   .header__logo{
+           font-size: 15px;
+   }
+   .contenedorCarrusel {
+    margin: 30px;
+}
+}
+
+   
+   @media screen and (max-width: 426px) {
+       * {
+           margin: 0px;
+           padding: 0px;
+           margin-bottom: 20px;
+           font-size: smaller;
+       }
+       .header__pestanas {
+           height: 200px;
+           background-size: 100%;
+           background-position-y: center;
+       }
+    
+      .header__item {
+          color: rgb(136, 136, 136);
+          font-weight: 700;
+      }
+      .header__menu {
+        margin: 0px;
+        float: right;
+        font-size: small;
+      }
+      .header__primario{
+        height: 200px;
+    } 
+    .header__logo{
+        font-size: 15px;
+    }
+    .header__img{
+        display: none;
+    }
+     
+    main {
+          width: 100%;
+          height: auto;
+      }
+      .box__primera {
+          display: block;
+      }
+      .box__texto {
+          width: auto;
+          color: floralwhite;
+          height: auto;
+          font-size: small;
+      }
+      .box__mapa { 
+        width: 300px;
+        margin: 0px;
+      }
+      h3 {
+          font-size: small;
+      }
+      .parrilla{
+          background-image: url(../img/PARRILLA.jpg);
+          height: 200px;
+          background-size: 100%;
+          background-position:center;
+          font-size: 30px;
+          background-repeat: no-repeat;
+      }
+      
+      .plancha{
+          background-image: url(../img/PLANCHA.jpg);
+          height: 200px;
+          background-size: 100%;
+          background-position:center;
+          font-size: 30px;
+          background-repeat: no-repeat;
+      }
+      .header__img{
+          height: 15px;
+      }
+      .contenedorCarrusel {
+        margin: 30px;
+    }
+      }
+   
+      @media screen and (min-width: 1024px) {
+       * {
+           margin: 0px;
+           padding: 0px;
+           margin-bottom: 20px;
+       }
+       .header__pestanas {
+           height: 350px;
+       }
+      .header__primario {
+          height: 500px;
+      }
+      .header__item {
+          color: rgb(136, 136, 136);
+          font-weight: 700;
+      }
+      .header__menu {
+        margin: 0px;
+        float: right;
+        font-size: 14px;
+      }
+      
+      main {
+          width: 100%;
+          height: auto;
+          font-size: 16px;
+      }
+      .box__primera {
+          display: block;
+      }
+      .box__texto {
+          width: auto;
+          color: floralwhite;
+          height: auto;
+          font-size: 16px;
+      }
+      .box__mapa { 
+        width: 800px;
+        margin: 10px;
+      }
+      h3 {
+          font-size: medium;
+      }
+      .parrilla{
+          background-image: url(../img/PARRILLA.jpg);
+          height: 200px;
+          background-size: 100%;
+          background-position:center;
+          font-size: 30px;
+          background-repeat: no-repeat;
+      }
+      
+      .plancha{
+          background-image: url(../img/PLANCHA.jpg);
+          height: 200px;
+          background-size: 100%;
+          background-position:center;
+          font-size: 30px;
+          background-repeat: no-repeat;
+      }
+      }
+
+
+

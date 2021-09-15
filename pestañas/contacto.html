@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contáctate con el sitio de las mejores hamburguesas del país. Estamos para ayudarte, no dudes en dejar un mensaje.">
+  <meta name="keywords"
+    content="hamburguesas, parrilla, plancha, Beldoburgs, especiales, fritas, fritura, patys, burgs, papas, comida, rapida, artesanal, casero, fresco, escobar, queso, cheddar">
+  <title>Beldoburg´s | Contacto</title>
+  <!--css-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!--Animate-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Bootstrap Java-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/f9f9242801.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="contact">
+
+  <nav>
+    <ul>
+      <li class="header__menu">
+        <a class="header__item" href="../index.html">HOME</a>
+      </li>
+      <li class="header__menu">
+        <a class="header__item" href="especiales.html">ESPECIALES</a>
+      </li>
+      <li class="header__menu">
+        <a class="header__item" href="acercade.html">ACERCA DE</a>
+      </li>
+      <li class="header__menu">
+        <a class="header__item" href="contacto.html">CONTACTO</a>
+      </li>
+      <li class="header__menu">
+        <a class="header__item" href="nuevopedido.html">NUESTRAS BURG´S</a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <main>
+
+    <div class="contenedorContacto">
+
+      <h1>Formulario de contacto</h1>
+
+      <div class="contenidoContacto">
+
+        <div class="info">
+
+          <div class="col">
+            <i class="icono fas fa-map-marker-alt"></i>
+            <p>Av. 25 de Mayo 1264, Belen de Escobar</p>
+          </div>
+
+          <div class="col">
+            <i class="icono fas fa-envelope"></i>
+            <p>consulta@correo.com</p>
+          </div>
+
+          <div class="col">
+            <i class="icono fas fa-phone"></i>
+            <p>11 2222 2129 <br> 11 2279 2210</p>
+          </div>
+
+          <div class="redes-s">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+
+          <form action="" method="GET" class="formulario">
+
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+            <input type="text" name="correo" placeholder="Correo electronico" id="correo">
+            <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+            <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Beldoburgs | Contacto</h5>
+                  </div>
+                  <div class="modal-body">
+                    ¡Gracias por tu comentario! Que tengas un buen día.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
