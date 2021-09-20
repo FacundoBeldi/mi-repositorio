@@ -506,6 +506,9 @@ p {
   .contenedorCarrusel {
     margin: 30px;
   }
+  .modal-body {
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 426px) {
